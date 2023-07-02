@@ -42,3 +42,14 @@ Para realizar la validación del bloque, importar el siguiente cURL en Postman y
 ```
 curl --location 'http://127.0.0.1:5000/is_valid'
 ```
+
+Para agregar una transacción, importar el siguiente cURL en Postman y ejecutarlo:
+```
+curl --location 'http://127.0.0.1:5000/add_transaction' \
+--header 'Content-Type: application/json' \
+--data '{
+    "sender": "Walter Huacho",
+    "receiver": "Prueba Prueba",
+    "amount": 105
+}'
+```
